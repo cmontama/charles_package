@@ -1,0 +1,3 @@
+graft charles_package
+global-exclude *.py[cod] __pycache__ *.so *.ipynb
+recursive-exclude  charles_package/jupy *
