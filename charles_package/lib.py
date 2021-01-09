@@ -48,6 +48,65 @@ def clean_data(data):
     return data
 
 
+def try_me():
+    print('Enter your name:')
+    x = input()
+    print(f"Pikaboo {x}!")
+    for i in range(3):
+        print()
+    print(f"I'm sure you didn't see that coming {x}!")
+    for i in range(5):
+        print()
+    print("Enter your name (and don't mispell it):")
+    y = input()
+    if y != x:
+        print(f"Hum... Nice to meet you {y}")
+        print(f"How many more personalities do you have?:")
+        n = input()
+        if type(n) not int:
+            print(f"How many more personalities do you have? (enter a number please...):")
+            n = input()
+        if n == 0:
+            print(f"Good, life is complicate enough like this, ahah")
+        else:
+            print(f"Sorry {y}, but I don't have time for that")
+    for i in range(15):
+        print()
+    print("... Neither that!")
+    for i in range(5):
+        print()
+    print("*enjoying this divine feeling of satisfaction*")
+    for i in range(4):
+        print()
+    print(f"Do you want more? (y/n)")
+    a = input()
+    if a == 'y':
+        for i in range(5):
+            print()
+        print(f"Well, {y}, you are living dangerously...")
+        for i in range(5):
+            print()
+        if y != None:
+            print(f"I'm not sure {x} would like that..")
+            for i in range(2):
+                print("...")
+            print("Anyway...")
+            for i in range(2):
+                print("...")
+            print(f"{y} Here is your reward:")
+            print("'Mental breakdown is when you call your own bluff'")
+            print("@fakeBaudrillard")
+            print("[not me by the way, I'm just a fan]")
+    else:
+        print("Too bad you missed the reward..")
+        if y == None:
+            print("...and an alternate path... ;)")
+        print("You should try_me() again [lol, going meta]")
+
+
+
+
+
 if __name__ == '__main__':
     # For introspections purpose to quickly get this functions on ipython
     import charles_package
